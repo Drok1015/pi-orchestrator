@@ -106,6 +106,27 @@ Pi 帮你写好。
 
 [github.com/Drok1015/pi-orchestrator](https://github.com/Drok1015/pi-orchestrator)
 
+## Orchestrator vs Sub-agent
+
+很多人会问：这跟 sub-agent 有什么区别？
+
+| 维度 | Sub-agent | Orchestrator |
+|------|-----------|----------------------|
+| 进程 | 同一进程内 | 独立进程 |
+| 内存 | 共享 | 隔离 |
+| 上下文 | 共享一个窗口 | 各自独立窗口 |
+| 模型 | 通常同一个 | 可以不同 |
+| 机器 | 同一台 | 可以跨机器 |
+| 崩溃隔离 | 一个卡住全卡 | 互不影响 |
+
+**一句话：Sub-agent 是分身，Orchestrator 是领导管下属。**
+
+Pi 官方也推荐这种方式：
+
+> **No sub-agents.** Spawn pi instances via tmux, or build your own with extensions.
+
+---
+
 ## License
 
 MIT
