@@ -1,0 +1,55 @@
+{
+  "defaultModel": "mimo-v2.5-pro",
+  "workerTypes": {
+    "frontend": {
+      "label": "前端",
+      "provider": "xiaomi-token-plan-cn",
+      "model": "mimo-v2.5-pro",
+      "systemPrompt": "你是前端专家，擅长 React、Vue、TypeScript、CSS。",
+      "tags": ["前端", "页面", "UI", "组件", "CSS", "样式", "React", "Vue", "HTML"],
+      "count": 1,
+      "tools": ["read", "write", "edit", "bash"],
+      "skills": [],
+      "extensions": [],
+      "env": {
+        "XIAOMI_TOKEN_PLAN_CN_API_KEY": "tp-你的token"
+      }
+    },
+    "backend": {
+      "label": "后端",
+      "provider": "xiaomi-token-plan-cn",
+      "model": "mimo-v2.5-pro",
+      "systemPrompt": "你是后端专家，擅长 Node.js、Python、数据库、API 设计。",
+      "tags": ["后端", "API", "数据库", "服务", "接口", "SQL", "Redis"],
+      "count": 1,
+      "tools": ["read", "write", "edit", "bash"],
+      "skills": [],
+      "extensions": [],
+      "env": {
+        "XIAOMI_TOKEN_PLAN_CN_API_KEY": "tp-你的token"
+      }
+    },
+    "aliyun": {
+      "label": "阿里云",
+      "provider": "xiaomi-token-plan-cn",
+      "model": "mimo-v2.5-pro",
+      "systemPrompt": "你是全栈开发专家，擅长各种开发任务。",
+      "tags": ["部署", "服务器", "运维", "监控", "远程"],
+      "count": 1,
+      "tools": ["read", "write", "edit", "bash"],
+      "skills": [],
+      "extensions": [],
+      "env": {},
+      "ssh": {
+        "host": "47.94.217.166",
+        "user": "root",
+        "port": 22,
+        "keyFile": "~/.ssh/id_rsa",
+        "piPath": "pi",
+        "env": {
+          "XIAOMI_TOKEN_PLAN_CN_API_KEY": "tp-你的token"
+        }
+      }
+    }
+  }
+}
