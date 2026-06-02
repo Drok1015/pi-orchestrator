@@ -451,7 +451,13 @@ function updateStatus() {
 // ============ 扩展入口 ============
 
 export default function (pi: ExtensionAPI) {
-  if (process.env.PI_ORCHESTRATOR !== "1") return;
+  // 如果没有配置文件，跳过
+  const configPaths = [
+    resolve(process.cwd(), ".pi/orchestrator.json"),
+    resolve(process.env.HOME ?? "~", ".pi/orchestrator.json"),
+  ];
+  const hasConfig = configPaths.some(p => existsSync(p));
+  if (!hasConfig) return;
 
   config = loadConfig();
 

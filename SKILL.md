@@ -121,9 +121,11 @@
 ## 启动方式
 
 ```bash
-# 启动主控 + 所有 Worker
-PI_ORCHESTRATOR=1 pi
+# 直接启动，自动加载 orchestrator.json
+pi
 ```
+
+如果 `~/.pi/orchestrator.json` 存在，扩展自动启用。
 
 ## 命令
 
@@ -461,7 +463,7 @@ ssh root@远程IP "XIAOMI_TOKEN_PLAN_CN_API_KEY=tp-你的token pi --provider xia
 ```
 ┌─────────────────────────────────────────────────────────┐
 │  启动                                                    │
-│  PI_ORCHESTRATOR=1 pi          # 启动主控 + Worker      │
+│  pi                           # 自动加载 orchestrator   │
 ├─────────────────────────────────────────────────────────┤
 │  星型模式                                                │
 │  /orch <任务>                  # 自动分配                │
