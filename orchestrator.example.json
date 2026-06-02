@@ -41,7 +41,7 @@
       "extensions": [],
       "env": {},
       "ssh": {
-        "host": "47.94.217.166",
+        "host": "your-server-ip",
         "user": "root",
         "port": 22,
         "keyFile": "~/.ssh/id_rsa",

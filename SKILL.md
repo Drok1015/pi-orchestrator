@@ -74,7 +74,7 @@
       "extensions": [],
       "env": {},
       "ssh": {
-        "host": "47.94.217.166",
+        "host": "your-server-ip",
         "user": "root",
         "port": 22,
         "keyFile": "~/.ssh/id_rsa",
@@ -361,7 +361,7 @@ ssh root@远程IP "XIAOMI_TOKEN_PLAN_CN_API_KEY=tp-你的token pi --provider xia
       "tags": ["部署", "服务器", "运维", "远程"],
       "count": 1,
       "ssh": {
-        "host": "47.94.217.166",
+        "host": "your-server-ip",
         "user": "root",
         "env": {
           "XIAOMI_TOKEN_PLAN_CN_API_KEY": "tp-你的token"
